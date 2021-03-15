@@ -1,0 +1,4 @@
+0 TextAsset Base
+ 1 string m_Name = "serverlist"
+ 1 string m_Script = "<root>\n\n	<server name="localhost" host="localhost" port="16700" dev="false" />\n	\n	<server name="BETA" host="ec2-46-51-185-130.eu-west-1.compute.amazonaws.com" port="16700" dev="true" />\n	\n</root>"
+ 1 string m_PathName = ""

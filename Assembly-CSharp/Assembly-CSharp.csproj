@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AEC93FA6-B723-4386-80FF-F9DB002C1EB3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>D:\SteamLibrary\steamapps\common\Leviathan Warships\Leviathan_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>D:\SteamLibrary\steamapps\common\Leviathan Warships\Leviathan_Data\Managed\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>D:\SteamLibrary\steamapps\common\Leviathan Warships\Leviathan_Data\Managed\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>D:\SteamLibrary\steamapps\common\Leviathan Warships\Leviathan_Data\Managed\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>D:\SteamLibrary\steamapps\common\Leviathan Warships\Leviathan_Data\Managed\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\SteamLibrary\steamapps\common\Leviathan Warships\Leviathan_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AIState.cs" />
+    <Compile Include="AIStateMachine.cs" />
+    <Compile Include="AnchorButton.cs" />
+    <Compile Include="AoeMonster.cs" />
+    <Compile Include="AudioManager.cs" />
+    <Compile Include="Battery.cs" />
+    <Compile Include="Battlebar.cs" />
+    <Compile Include="Blocker.cs" />
+    <Compile Include="BossC1M9.cs" />
+    <Compile Include="BtnClickOnEscape.cs" />
+    <Compile Include="CampaignInfo.cs" />
+    <Compile Include="CamShaker.cs" />
+    <Compile Include="CaptainPicard.cs" />
+    <Compile Include="ChatClient.cs" />
+    <Compile Include="ChatWindow.cs" />
+    <Compile Include="CheatMan.cs" />
+    <Compile Include="ChooseFleetMenu.cs" />
+    <Compile Include="ClientGame.cs" />
+    <Compile Include="ClientMapMan.cs" />
+    <Compile Include="ClientPlayer.cs" />
+    <Compile Include="Cloak.cs" />
+    <Compile Include="ColorExtensions.cs" />
+    <Compile Include="ComponentDB.cs" />
+    <Compile Include="CompressUtils.cs" />
+    <Compile Include="ConnectMenu.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="ContextMenu.cs" />
+    <Compile Include="CreateGame.cs" />
+    <Compile Include="Credits.cs" />
+    <Compile Include="DamageEffect.cs" />
+    <Compile Include="DamageMan.cs" />
+    <Compile Include="DebugUtils.cs" />
+    <Compile Include="DefaultSections.cs" />
+    <Compile Include="Deployable.cs" />
+    <Compile Include="Dialog.cs" />
+    <Compile Include="DialogAdvice.cs" />
+    <Compile Include="Direction.cs" />
+    <Compile Include="EnableCameraDepthBuffer.cs" />
+    <Compile Include="EndGameData.cs" />
+    <Compile Include="EndGameMenu.cs" />
+    <Compile Include="EndGame_PlayerStatistics.cs" />
+    <Compile Include="ErrorCode.cs" />
+    <Compile Include="ExitState.cs" />
+    <Compile Include="FleetDefUtils.cs" />
+    <Compile Include="FleetEditor_PreviewArea.cs" />
+    <Compile Include="FleetMenu.cs" />
+    <Compile Include="FleetShip.cs" />
+    <Compile Include="FleetSize.cs" />
+    <Compile Include="FleetSizeClass.cs" />
+    <Compile Include="FleetSizes.cs" />
+    <Compile Include="FloatingProp.cs" />
+    <Compile Include="FlowerMenu.cs" />
+    <Compile Include="GameCamera.cs" />
+    <Compile Include="GameMode.cs" />
+    <Compile Include="GameModeAssassination.cs" />
+    <Compile Include="GameModeBlitz.cs" />
+    <Compile Include="GameModeCampaign.cs" />
+    <Compile Include="GameModeChallenge.cs" />
+    <Compile Include="GameModeFreeForAll.cs" />
+    <Compile Include="GameModeTest.cs" />
+    <Compile Include="GameOutcome.cs" />
+    <Compile Include="GamePost.cs" />
+    <Compile Include="GameRules.cs" />
+    <Compile Include="GameSettings.cs" />
+    <Compile Include="GameState.cs" />
+    <Compile Include="GameUtils.cs" />
+    <Compile Include="GDPBackend.cs" />
+    <Compile Include="GenericCheckBox.cs" />
+    <Compile Include="GenericFactory.cs" />
+    <Compile Include="GenericTextInput.cs" />
+    <Compile Include="guitest.cs" />
+    <Compile Include="GuiUtils.cs" />
+    <Compile Include="GUI_Blueprint_Captain.cs" />
+    <Compile Include="GUI_Blueprint_Part.cs" />
+    <Compile Include="GUI_Blueprint_Ship.cs" />
+    <Compile Include="Gun.cs" />
+    <Compile Include="GunAim.cs" />
+    <Compile Include="GunDeploy.cs" />
+    <Compile Include="GunFire.cs" />
+    <Compile Include="GunFireBeam.cs" />
+    <Compile Include="GunFollowOrder.cs" />
+    <Compile Include="GunGuard.cs" />
+    <Compile Include="GunMuzzleDef.cs" />
+    <Compile Include="GunOff.cs" />
+    <Compile Include="GunReload.cs" />
+    <Compile Include="GunTarget.cs" />
+    <Compile Include="GunThink.cs" />
+    <Compile Include="Gun_AutoCannon.cs" />
+    <Compile Include="Gun_Beam.cs" />
+    <Compile Include="Gun_Missile.cs" />
+    <Compile Include="Gun_Railgun.cs" />
+    <Compile Include="Hit.cs" />
+    <Compile Include="HitText.cs" />
+    <Compile Include="HitTextDef.cs" />
+    <Compile Include="HPModule.cs" />
+    <Compile Include="HPModuleSettings.cs" />
+    <Compile Include="Hud.cs" />
+    <Compile Include="IBuff_CrewXPGain.cs" />
+    <Compile Include="IBuff_Health.cs" />
+    <Compile Include="IBuff_HullIntegrity.cs" />
+    <Compile Include="IBuff_Manouverability.cs" />
+    <Compile Include="IBuff_RepairRate.cs" />
+    <Compile Include="IBuff_TargetingRate.cs" />
+    <Compile Include="IBuff_WeaponsDamage.cs" />
+    <Compile Include="IngameMenu.cs" />
+    <Compile Include="IOrderable.cs" />
+    <Compile Include="LevelScript.cs" />
+    <Compile Include="LineDrawer.cs" />
+    <Compile Include="LineType.cs" />
+    <Compile Include="ListBox_Captains_Filler.cs" />
+    <Compile Include="ListBox_FleetInfo_Filler.cs" />
+    <Compile Include="ListBox_Parts_Filler.cs" />
+    <Compile Include="ListBox_Ships_Filler.cs" />
+    <Compile Include="LoadScreen.cs" />
+    <Compile Include="LobbyMenu.cs" />
+    <Compile Include="LobbyMenu_Player.cs" />
+    <Compile Include="LobbyPlayer.cs" />
+    <Compile Include="Localize.cs" />
+    <Compile Include="LODInstruction.cs" />
+    <Compile Include="LODManager.cs" />
+    <Compile Include="LOD_DEBUGGER.cs" />
+    <Compile Include="LogMsg.cs" />
+    <Compile Include="LogMsg_Text.cs" />
+    <Compile Include="LogWindow.cs" />
+    <Compile Include="LosDrawer.cs" />
+    <Compile Include="main.cs" />
+    <Compile Include="MapInfo.cs" />
+    <Compile Include="MapMan.cs" />
+    <Compile Include="Marker.cs" />
+    <Compile Include="MenuBase.cs" />
+    <Compile Include="MessageLog.cs" />
+    <Compile Include="Mine.cs" />
+    <Compile Include="MineBoss.cs" />
+    <Compile Include="MineDecoy.cs" />
+    <Compile Include="MineExplode.cs" />
+    <Compile Include="MineVisibility.cs" />
+    <Compile Include="MiniJSON\Json.cs" />
+    <Compile Include="MissileParamters.cs" />
+    <Compile Include="MissionLog.cs" />
+    <Compile Include="MNAction.cs" />
+    <Compile Include="MNArea.cs" />
+    <Compile Include="MNBlocker.cs" />
+    <Compile Include="MNGameOver.cs" />
+    <Compile Include="MNMarker.cs" />
+    <Compile Include="MNode.cs" />
+    <Compile Include="MNOnDestroy.cs" />
+    <Compile Include="MNPlayers.cs" />
+    <Compile Include="MNRepeater.cs" />
+    <Compile Include="MNSpawn.cs" />
+    <Compile Include="MNSpawnWave.cs" />
+    <Compile Include="MNTimer.cs" />
+    <Compile Include="MNTrigger.cs" />
+    <Compile Include="MNTutorial.cs" />
+    <Compile Include="ModuleButton.cs" />
+    <Compile Include="MonsterGrenade.cs" />
+    <Compile Include="MonsterGrenadeOLD.cs" />
+    <Compile Include="MorsePlayer.cs" />
+    <Compile Include="MoveButton.cs" />
+    <Compile Include="MsgBox.cs" />
+    <Compile Include="MusicManager.cs" />
+    <Compile Include="NetObj.cs" />
+    <Compile Include="NewsPost.cs" />
+    <Compile Include="NewsTicker.cs" />
+    <Compile Include="ObjectFactory.cs" />
+    <Compile Include="OfflineGame.cs" />
+    <Compile Include="OfflineGameDB.cs" />
+    <Compile Include="OfflineMenu.cs" />
+    <Compile Include="OfflineState.cs" />
+    <Compile Include="OnlineMenu.cs" />
+    <Compile Include="OnlineState.cs" />
+    <Compile Include="OnLODLevelChanged.cs" />
+    <Compile Include="OpenChooseFleet.cs" />
+    <Compile Include="OpenFleetEdit.cs" />
+    <Compile Include="OpenInvite.cs" />
+    <Compile Include="OptionsWindow.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderMarker.cs" />
+    <Compile Include="PackMan.cs" />
+    <Compile Include="Path.cs" />
+    <Compile Include="PdxNews.cs" />
+    <Compile Include="PhysicDebug.cs" />
+    <Compile Include="Platform.cs" />
+    <Compile Include="PlatformType.cs" />
+    <Compile Include="PlayerInitData.cs" />
+    <Compile Include="PlayerPresenceStatus.cs" />
+    <Compile Include="PlayerRemoved.cs" />
+    <Compile Include="PlayerTurnStatus.cs" />
+    <Compile Include="PLog.cs" />
+    <Compile Include="PostEffector.cs" />
+    <Compile Include="PRand.cs" />
+    <Compile Include="ProfileTimer.cs" />
+    <Compile Include="Projectile.cs" />
+    <Compile Include="Projectile_Deploy.cs" />
+    <Compile Include="Projectile_Missile.cs" />
+    <Compile Include="Projectile_MultiTarget.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PSteam.cs" />
+    <Compile Include="PTech\ChannelID.cs" />
+    <Compile Include="PTech\ChatChannel.cs" />
+    <Compile Include="PTech\ChatServer.cs" />
+    <Compile Include="PTech\ContentPack.cs" />
+    <Compile Include="PTech\FleetDef.cs" />
+    <Compile Include="PTech\FriendData.cs" />
+    <Compile Include="PTech\Game.cs" />
+    <Compile Include="PTech\GamePlayer.cs" />
+    <Compile Include="PTech\GameType.cs" />
+    <Compile Include="PTech\ModuleDef.cs" />
+    <Compile Include="PTech\PacketSocket.cs" />
+    <Compile Include="PTech\RPC.cs" />
+    <Compile Include="PTech\SectionDef.cs" />
+    <Compile Include="PTech\ServerBase.cs" />
+    <Compile Include="PTech\ShipDef.cs" />
+    <Compile Include="PTech\ShipInstanceDef.cs" />
+    <Compile Include="PTech\TurnData.cs" />
+    <Compile Include="PTech\User.cs" />
+    <Compile Include="PTech\UserStats.cs" />
+    <Compile Include="PwdUtils.cs" />
+    <Compile Include="Radar.cs" />
+    <Compile Include="RandomRotation.cs" />
+    <Compile Include="RandomScale.cs" />
+    <Compile Include="RandomSFX.cs" />
+    <Compile Include="Route.cs" />
+    <Compile Include="ScreenCamera.cs" />
+    <Compile Include="Section.cs" />
+    <Compile Include="SectionSettings.cs" />
+    <Compile Include="Shallow.cs" />
+    <Compile Include="Shield.cs" />
+    <Compile Include="ShieldGeometry.cs" />
+    <Compile Include="Ship.cs" />
+    <Compile Include="ShipAi.cs" />
+    <Compile Include="ShipAISettings.cs" />
+    <Compile Include="ShipAttack.cs" />
+    <Compile Include="ShipBossC1m3.cs" />
+    <Compile Include="ShipBuff.cs" />
+    <Compile Include="ShipCombat.cs" />
+    <Compile Include="ShipCombat_Base.cs" />
+    <Compile Include="ShipCombat_ChickenRace.cs" />
+    <Compile Include="ShipCombat_DriveBy.cs" />
+    <Compile Include="ShipCombat_Surround.cs" />
+    <Compile Include="ShipCombat_TurnAndFire.cs" />
+    <Compile Include="ShipDefUtils.cs" />
+    <Compile Include="ShipFactory.cs" />
+    <Compile Include="ShipFollow.cs" />
+    <Compile Include="ShipGuard.cs" />
+    <Compile Include="ShipHuman.cs" />
+    <Compile Include="ShipInactive.cs" />
+    <Compile Include="ShipMenu.cs" />
+    <Compile Include="ShipPatrol.cs" />
+    <Compile Include="ShipSpawner.cs" />
+    <Compile Include="ShipTag.cs" />
+    <Compile Include="ShipTagMan.cs" />
+    <Compile Include="ShipThink.cs" />
+    <Compile Include="Ship_Base.cs" />
+    <Compile Include="Shop.cs" />
+    <Compile Include="ShopItemData.cs" />
+    <Compile Include="ShowOnPlatform.cs" />
+    <Compile Include="SimpleTag.cs" />
+    <Compile Include="Smoke.cs" />
+    <Compile Include="SmokeGrenade.cs" />
+    <Compile Include="Splash.cs" />
+    <Compile Include="SplashTrigger.cs" />
+    <Compile Include="StateBase.cs" />
+    <Compile Include="StatusLight_Advanced.cs" />
+    <Compile Include="StatusLight_Basic.cs" />
+    <Compile Include="StatusWnd_Gun.cs" />
+    <Compile Include="StatusWnd_HPModule.cs" />
+    <Compile Include="StatusWnd_Shield.cs" />
+    <Compile Include="StatusWnd_Ship.cs" />
+    <Compile Include="StringUtils.cs" />
+    <Compile Include="StringWriterWithEncoding.cs" />
+    <Compile Include="SupportShip.cs" />
+    <Compile Include="SurfaceSound.cs" />
+    <Compile Include="TimedDestruction.cs" />
+    <Compile Include="ToastMaster.cs" />
+    <Compile Include="ToolTip.cs" />
+    <Compile Include="ToolTipDisplay.cs" />
+    <Compile Include="Trace.cs" />
+    <Compile Include="Triangulator.cs" />
+    <Compile Include="TurnMan.cs" />
+    <Compile Include="TurnPhase.cs" />
+    <Compile Include="TurnType.cs" />
+    <Compile Include="Unit.cs" />
+    <Compile Include="UnitAi.cs" />
+    <Compile Include="UnitSelectionMarker.cs" />
+    <Compile Include="UnitSettings.cs" />
+    <Compile Include="UserEvent.cs" />
+    <Compile Include="UserManClient.cs" />
+    <Compile Include="UserManClientLocal.cs" />
+    <Compile Include="UserManClientRemote.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Vector2i.cs" />
+    <Compile Include="VersionInfo.cs" />
+    <Compile Include="ViewCone.cs" />
+    <Compile Include="ViewCone_V2.cs" />
+    <Compile Include="VOCollection.cs" />
+    <Compile Include="VOSystem.cs" />
+    <Compile Include="Wake.cs" />
+    <Compile Include="WaterSurface.cs" />
+    <Compile Include="waves.cs" />
+    <Compile Include="WSEffect.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
